@@ -5,7 +5,7 @@ var Ganache = require(process.env.TEST_BUILD
   ? "../build/ganache.core." + process.env.TEST_BUILD + ".js"
   : "../index.js");
 var fs = require("fs");
-var solc = require("solc");
+var solc = require("@dexon-foundation/dsolc");
 
 // Thanks solc. At least this works!
 // This removes solc's overzealous uncaughtException event handler.

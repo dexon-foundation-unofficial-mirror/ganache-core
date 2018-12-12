@@ -1,5 +1,5 @@
 {
-  "name": "ganache-core",
+  "name": "@dexon-foundation/ganache-core",
   "version": "2.3.1",
   "main": "./index.js",
   "engines": {
@@ -21,6 +21,8 @@
     "test-web-experimental": "cross-env TEST_BUILD=web-experimental npm run _mocha"
   },
   "dependencies": {
+    "@dexon-foundation/ethereumjs-vm": "^2.4.3",
+    "@dexon-foundation/web3-provider-engine": "^14.1.1",
     "abstract-leveldown": "3.0.0",
     "async": "2.6.1",
     "bip39": "2.5.0",
@@ -35,7 +37,6 @@
     "ethereumjs-block": "2.1.0",
     "ethereumjs-tx": "1.3.7",
     "ethereumjs-util": "5.2.0",
-    "ethereumjs-vm": "2.4.0",
     "heap": "0.2.6",
     "level-sublevel": "6.6.4",
     "levelup": "3.1.1",
@@ -45,10 +46,10 @@
     "seedrandom": "2.4.4",
     "source-map-support": "0.5.9",
     "tmp": "0.0.33",
-    "web3-provider-engine": "14.1.0",
     "websocket": "1.0.26"
   },
   "devDependencies": {
+    "@dexon-foundation/dsolc": "^0.4.24",
     "assert-match": "^1.1.1",
     "browserfs": "1.4.3",
     "cross-env": "5.2.0",
@@ -68,7 +69,6 @@
     "portfinder": "^1.0.18",
     "prettier": "^1.14.3",
     "request": "^2.88.0",
-    "solc": "0.4.24",
     "temp": "0.8.3",
     "web3": "1.0.0-beta.35",
     "webpack": "4.17.1",

@@ -3,7 +3,7 @@ const Ganache = require(process.env.TEST_BUILD
   : "../index.js");
 const { readFileSync } = require("fs");
 const temp = require("temp").track();
-const { compile } = require("solc");
+const { compile } = require("@dexon-foundation/dsolc");
 const memdown = require("memdown");
 const { join } = require("path");
 const assert = require("assert");

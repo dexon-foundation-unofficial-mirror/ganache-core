@@ -5,7 +5,7 @@ var Ganache = require(process.env.TEST_BUILD
   : "../index.js");
 var fs = require("fs");
 var path = require("path");
-var solc = require("solc");
+var solc = require("@dexon-foundation/dsolc");
 var to = require("../lib/utils/to");
 
 // Thanks solc. At least this works!

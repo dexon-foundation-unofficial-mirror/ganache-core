@@ -12,3 +12,4 @@ test/
 webpack/
 perf/
 npm-shrinkwrap.json.bak
+yarn.lock
