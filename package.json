@@ -14,8 +14,8 @@
     "build": "webpack-cli --config ./webpack/node/core.webpack.config.js",
     "build-web": "webpack-cli --config ./webpack/web-experimental/core.webpack.config.js",
     "format": "prettier --write \"{lib,perf,test}/**/*.js\" && eslint --fix --ignore-path .gitignore .",
-    "prepublishOnly": "npm run test && npm run build && npm run test-build && mv npm-shrinkwrap.json npm-shrinkwrap.json.bak && npm prune --only=prod && npm shrinkwrap",
-    "postpublish": "rm npm-shrinkwrap.json && mv npm-shrinkwrap.json.bak npm-shrinkwrap.json && npm install",
+    "prepublishOnly": "npm run test && npm run build && npm run test-build && mv yarn.lock yarn.lock.bak && yarn --production",
+    "postpublish": "rm yarn.lock && mv yarn.lock.bak yarn.lock && yarn",
     "test": "npm run _lint && npm run _mocha",
     "test-build": "cross-env TEST_BUILD=node npm run _mocha",
     "test-web-experimental": "cross-env TEST_BUILD=web-experimental npm run _mocha"
@@ -70,6 +70,7 @@
     "prettier": "^1.14.3",
     "request": "^2.88.0",
     "temp": "0.8.3",
+    "uuid": "^3.3.2",
     "web3": "1.0.0-beta.35",
     "webpack": "4.17.1",
     "webpack-bundle-size-analyzer": "2.7.0",
