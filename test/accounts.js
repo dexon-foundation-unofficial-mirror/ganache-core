@@ -6,7 +6,7 @@ var Ganache = require(process.env.TEST_BUILD
 var assert = require("assert");
 
 describe("Accounts", function() {
-  var expectedAddress = "0x604a95C9165Bc95aE016a5299dd7d400dDDBEa9A";
+  var expectedAddress = "0x35436bE48536d5d006e4Db81A5dA16CE4C38Ec25";
   var mnemonic = "into trim cross then helmet popular suit hammer cart shrug oval student";
 
   it("should respect the BIP99 mnemonic", function(done) {

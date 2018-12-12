@@ -14,7 +14,7 @@ describe("Interval Mining", function() {
   var web3;
 
   var mnemonic = "into trim cross then helmet popular suit hammer cart shrug oval student";
-  var firstAddress = "0x604a95C9165Bc95aE016a5299dd7d400dDDBEa9A";
+  var firstAddress = "0x35436bE48536d5d006e4Db81A5dA16CE4C38Ec25";
 
   it("should mine a block on the interval", function(done) {
     this.timeout(5000);
